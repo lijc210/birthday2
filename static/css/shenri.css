@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Concert+One|Pacifico");
+.mobile {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 50px;
+  font-size: 90px;
+  display: block;
+}
+
+h1, h2, span {
+  display: none;
+}
+
+@media screen and (min-width: 670px) {
+  .mobile {
+    display: none;
+  }
+
+  h1, h2, span {
+    display: block;
+  }
+
+  html,body{width:100%;height:100%;}
+
+  body {
+    background: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
+    cursor: crosshair;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    font-family: "Pacifico", cursive;
+  }
+
+  #container{width:100%;height:100%;position:fixed;top:0;left:0;z-index:999}
+  #output{width:100%;height:100%}
+  .prompt{width:60%;height:30px;margin:5px auto;text-align:center;line-height:30px;font-family:microsoft yahei,Arial,sans-serif;font-size:13px;color:#df0000}
+  .containerT{text-align:center;position:absolute;top:40%;left:45%;margin:-150px 0 0 -200px;border-radius:3px}
+  .containerB{text-align:right;position:absolute;bottom:5%;right:5%;margin:-150px 0 0 -200px;border-radius:3px}
+}
